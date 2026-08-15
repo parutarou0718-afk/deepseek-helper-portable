@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DeepSeek 助手 · 免安装一键包</title>
+<style>
+  :root { --bg:#0f1115; --card:#171a21; --text:#e8eaed; --sub:#9aa3ad; --accent:#4d7cfe; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: "Segoe UI","Microsoft YaHei",system-ui,sans-serif; line-height: 1.7; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 40px 20px 60px; }
+  .hero { text-align: center; padding: 20px 0 30px; }
+  .logo { font-size: 40px; }
+  h1 { font-size: 26px; font-weight: 700; margin: 12px 0 8px; letter-spacing: .5px; }
+  .slogan { color: var(--sub); font-size: 15px; }
+  .badges { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 20px 0 26px; }
+  .badge { background: var(--card); border: 1px solid #262b36; border-radius: 20px; padding: 6px 14px; font-size: 13px; color: #cfd5dd; }
+  .btn {
+    display: inline-block; background: var(--accent); color: #fff; text-decoration: none;
+    padding: 14px 42px; border-radius: 28px; font-size: 17px; font-weight: 600; letter-spacing: 1px;
+    box-shadow: 0 6px 22px rgba(77,124,254,.35);
+  }
+  .btn:hover { filter: brightness(1.08); }
+  .tip { margin-top: 12px; font-size: 12px; color: #5b6470; }
+  section { background: var(--card); border: 1px solid #222834; border-radius: 16px; padding: 22px; margin-top: 18px; }
+  h2 { font-size: 17px; margin-bottom: 12px; }
+  ol, ul { padding-left: 22px; }
+  li { margin: 6px 0; color: #cfd5dd; font-size: 14px; }
+  .faq-item { margin-bottom: 14px; }
+  .faq-item:last-child { margin-bottom: 0; }
+  .q { font-weight: 600; font-size: 15px; }
+  .a { color: var(--sub); font-size: 14px; margin-top: 2px; }
+  a { color: var(--accent); }
+  footer { text-align: center; color: #5b6470; font-size: 12px; margin-top: 28px; }
+  code { background: #0f1115; border-radius: 5px; padding: 1px 6px; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <div class="logo">🤖</div>
+    <h1>DeepSeek 助手 · 免安装一键包</h1>
+    <p class="slogan">装 DeepSeek 最劝退的不是下载，是环境报错——这个包解压双击就能用。</p>
+    <div class="badges">
+      <span class="badge">✅ 免安装</span>
+      <span class="badge">✅ 双击即用</span>
+      <span class="badge">✅ 不用装 Node</span>
+      <span class="badge">✅ 自带加载页</span>
+    </div>
+    <a class="btn" href="https://github.com/parutarou0718-afk/deepseek-helper-portable/releases/download/v1.0.0/DeepSeek-Helper-Portable-v1.0.0.zip">立即下载</a>
+    <div class="tip">Windows 10 / 11 · 64 位 · 约 108 MB</div>
+  </div>
+
+  <section>
+    <h2>三步开始用</h2>
+    <ol>
+      <li>下载并解压 <code>DeepSeek-Helper-Portable-v1.0.0.zip</code>（别放 C 盘 Program Files）。</li>
+      <li>双击 <code>启动DeepSeek助手.exe</code>，浏览器会自动打开。</li>
+      <li>第一次按提示填自己的 DeepSeek API Key，即可开始对话。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>常见问题</h2>
+    <div class="faq-item">
+      <div class="q">要钱吗？</div>
+      <div class="a">软件本身免费。但它是调 DeepSeek 官方模型，需要你自己的 API Key，按用量计费（很便宜）。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">API Key 怎么弄？</div>
+      <div class="a">打开 <a href="https://platform.deepseek.com" target="_blank" rel="noopener">platform.deepseek.com</a> 注册 →「API Keys」→ 创建并复制（sk- 开头）。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">安全吗？</div>
+      <div class="a">聊天记录、你的 Key 都存在你自己电脑本地，不经过第三方服务器。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">支持 Mac 吗？</div>
+      <div class="a">目前仅 Windows 64 位，Mac 版在路上了。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">打不开 / 报错？</div>
+      <div class="a">看解压目录里的 <code>dsh.log</code>，把内容发给作者即可。</div>
+    </div>
+  </section>
+
+  <footer>
+    本站为非官方第三方便携封装包 · 与 DeepSeek 官方无关<br>
+    备案号：____ ｜ 联系：____
+  </footer>
+
+</div>
+</body>
+</html>
