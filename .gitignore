@@ -1,0 +1,16 @@
+# 构建产物与运行时文件
+*.zip
+*.exe
+dsh.log
+dsh.pid
+check.txt
+
+# Go 构建缓存
+.gocache/
+.gopath/
+.gotmp/
+
+# 便携包运行时目录
+node_modules/
+dsh-home/
+workspace/
